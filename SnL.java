@@ -8,21 +8,29 @@ public class SnL {
 		final int noplay=0;
 		final int ladder=1;
 		final int snake=2;
-		int die = (int) Math.floor(Math.random()*6)+1;
-		int option= (int) Math.floor(Math.random()*3);
-		switch(option)
+		while(position==100)
 		{
-		case ladder:
-			position=position+die;
-			break;
-		case snake:
-			position=position-die;
-			break;
-		case noplay:
-			position=position;
-			break;
-			
+			int die = (int) Math.floor(Math.random()*6)+1;
+			int option= (int) Math.floor(Math.random()*3);
+			switch(option)
+			{
+			case ladder:
+				position=position+die;
+				break;
+			case snake:
+				position=position-die;
+				break;
+			case noplay:
+				position=position;
+				break;
+				
+			}
+			if(position < 0)
+			{
+				position=0;
+			}
 		}
+		
 	}
 
 }
