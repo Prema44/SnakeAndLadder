@@ -33,7 +33,14 @@ public class SnL {
 			{
 				position=position-die;
 			}
+			
+			countOfDieRoll++;
+			System.out.println("Position of Player: "+ position);
+			
 		}while(position!=100);
+		
+		System.out.println("number of die rolls to win: "+ countOfDieRoll);
+		
 		
 	}
 
