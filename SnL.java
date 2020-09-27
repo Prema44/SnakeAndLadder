@@ -33,7 +33,7 @@ public class SnL {
 			{
 				position=position-die;
 			}
-		}while(position!=100);
+		}while(position!=100)
 		
 	}
 
