@@ -29,7 +29,7 @@ public class SnL {
 			{
 				position=0;
 			}
-		}while(position==100)
+		}while(position!=100)
 		
 	}
 
