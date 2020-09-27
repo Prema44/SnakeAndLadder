@@ -8,7 +8,7 @@ public class SnL {
 		final int noplay=0;
 		final int ladder=1;
 		final int snake=2;
-		while(position==100)
+		do
 		{
 			int die = (int) Math.floor(Math.random()*6)+1;
 			int option= (int) Math.floor(Math.random()*3);
@@ -29,7 +29,7 @@ public class SnL {
 			{
 				position=0;
 			}
-		}
+		}while(position==100)
 		
 	}
 
